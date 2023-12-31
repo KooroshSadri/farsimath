@@ -1,0 +1,47 @@
+% farsimath.sty
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{farsimath}[2023/01/01 Farsi Math Symbols]
+
+\RequirePackage{graphicx}
+
+\newcommand{\farsymbol}[1]{
+    \mathchoice%
+      {\includegraphics[height = 1em]{FM/#1.pdf}}% Display style
+      {\includegraphics[height = 1em]{FM/#1.pdf}}% Text style
+      {\includegraphics[height = 0.7em]{FM/#1.pdf}}% Script style
+      {\includegraphics[height = 0.5em]{FM/#1.pdf}}% Script script style
+}
+
+\newcommand{\alef}{\farsymbol{alef}}
+\newcommand{\be}{\farsymbol{be}}
+\newcommand{\pe}{\farsymbol{pe}}
+\newcommand{\te}{\farsymbol{te}}
+\newcommand{\se}{\farsymbol{se}}
+\newcommand{\jim}{\farsymbol{jim}}
+\newcommand{\che}{\farsymbol{che}}
+\newcommand{\He}{\farsymbol{He}}
+\newcommand{\khe}{\farsymbol{khe}}
+\newcommand{\dal}{\farsymbol{dal}}
+\newcommand{\zal}{\farsymbol{zal}}
+\newcommand{\re}{\farsymbol{re}}
+\newcommand{\ze}{\farsymbol{ze}}
+\newcommand{\zhe}{\farsymbol{zhe}}
+\newcommand{\seen}{\farsymbol{seen}}
+\newcommand{\sheen}{\farsymbol{sheen}}
+\newcommand{\sad}{\farsymbol{sad}}
+\newcommand{\zad}{\farsymbol{zad}}
+\newcommand{\ta}{\farsymbol{ta}}
+\newcommand{\za}{\farsymbol{za}}
+\newcommand{\ain}{\farsymbol{ain}}
+\newcommand{\ghain}{\farsymbol{ghain}}
+\newcommand{\fe}{\farsymbol{fe}}
+\newcommand{\ghaf}{\farsymbol{ghaf}}
+\newcommand{\kaf}{\farsymbol{kaf}}
+\newcommand{\gaf}{\farsymbol{gaf}}
+\newcommand{\lam}{\farsymbol{lam}}
+\newcommand{\mim}{\farsymbol{mim}}
+\newcommand{\noon}{\farsymbol{noon}}
+\newcommand{\vov}{\farsymbol{vov}}
+\newcommand{\he}{\farsymbol{he}}
+\newcommand{\ye}{\farsymbol{ye}}
+% Add more commands for other symbols as needed
